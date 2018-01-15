@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.jrzdeveloper.creditcard.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/informacion_txtV"
+            android:layout_weight="2"
+            />
+        <Button
+            android:id="@+id/guardar_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar_btn"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guardar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/nombre_txtE"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:lines="1"
+
+                    />
+
+                <EditText
+                    android:id="@+id/lastname_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/apellido_txtE"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:lines="1"
+                    />
+
+                <EditText
+                    android:id="@+id/tarjet_number_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:hint="@string/numero_tarjeta_txtE"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/datos_M_A_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/nombres"
+                >
+                <EditText
+                    android:id="@+id/month_tarjet_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:maxLength="2"
+
+                    android:inputType="number"
+                    android:hint="@string/mes_tarjeta_txtE"
+                    />
+                <EditText
+                    android:id="@+id/year_tarjet_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:maxLength="2"
+
+                    android:inputType="number"
+                    android:hint="@string/anio_tarjeta_txtE"
+                    />
+                <EditText
+                    android:id="@+id/code_tarjet_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:hint="Codigo"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datos_M_A_C"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/direccion_txtE"
+                    />
+                <EditText
+                    android:id="@+id/street_number_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/calleynumero_txtE"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:lines="1"
+                    />
+                <EditText
+                    android:id="@+id/city_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Ciudad"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:lines="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/direccion"
+                >
+
+                <EditText
+                    android:id="@+id/state_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:hint="@string/estado_txtE"
+                    />
+
+                <EditText
+                    android:id="@+id/code_zip_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:inputType="number"
+                    android:maxLength="5"
+
+                    android:hint="@string/codigopostal_txtE"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

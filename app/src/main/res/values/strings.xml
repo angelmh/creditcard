@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tarjeta de Crédito</string>
+    <string name="informacion_txtV">Información de la tarjeta de crédito</string>
+    <string name="guardar_btn">Guardar</string>
+    <string name="nombre_txtE">Nombre</string>
+    <string name="apellido_txtE">Apellido</string>
+    <string name="numero_tarjeta_txtE">Número de tarjeta</string>
+    <string name="mes_tarjeta_txtE">Mes</string>
+    <string name="anio_tarjeta_txtE">Año</string>
+    <string name="codigo_tarjeta_txtE">Código</string>
+    <string name="direccion_txtE">Dirección</string>
+    <string name="calleynumero_txtE">Calle y Número</string>
+    <string name="ciudad_txtE">Ciudad</string>
+    <string name="estado_txtE">Estado</string>
+    <string name="codigopostal_txtE">Código Postal</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+
+    android:paddingTop="16dp"
+    tools:context="com.jrzdeveloper.creditcard.DetailActivity">
+
+    <LinearLayout
+        android:id="@+id/nombreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/nombreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="20dp"
+            android:textSize="22sp"
+            android:text="Angel Montelongo"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/nombreLayout"
+        android:id="@+id/relativeLayout">
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/credit_card"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/datosCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/card_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            >
+            <TextView
+                android:id="@+id/number_target_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1291239123231234"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/month_year_target_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="12/19"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
